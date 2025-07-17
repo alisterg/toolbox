@@ -1,0 +1,106 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "window.commandCenter": false,
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "on",
+    "debug.onTaskErrors": "debugAnyway",
+    "git.autofetch": true,
+    "editor.minimap.showSlider": "always",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "css.lint.unknownAtRules": "ignore",
+    "editor.cursorSurroundingLines": 3,
+    "workbench.tree.indent": 16,
+    "files.exclude": {
+        "package-lock.json": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "prettier.printWidth": 100,
+    "diffEditor.codeLens": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.tabWidth": 4,
+        "prettier.semi": false
+    },
+    "[erb]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "never"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "rubyLsp.formatter": "auto",
+    "vue.inlayHints.optionsWrapper": false,
+    "git.confirmSync": false,
+    "editor.fontFamily": "sf mono, tx-02",
+    "editor.stickyScroll.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "security.workspace.trust.untrustedFiles": "newWindow",
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "green",
+            "backgroundColor": "#1f1f1f"
+        },
+        {
+            "text": "FIXME:",
+            "color": "#66C3CC",
+            "backgroundColor": "#1f1f1f"
+        },
+        {
+            "text": "TODO:",
+            "color": "red",
+            "backgroundColor": "#1f1f1f"
+        }
+    ],
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "makefile.configureOnOpen": false,
+    "editor.codeLens": false,
+    "editor.inlayHints.enabled": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.overviewRulerBorder": false,
+    "prettier.arrowParens": "avoid",
+    "prettier.quoteProps": "consistent",
+    "prettier.semi": false,
+    "editor.indentSize": "tabSize",
+    "prettier.tabWidth": 4,
+    "editor.semanticHighlighting.enabled": false,
+    "workbench.activityBar.location": "bottom",
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.sideBar.location": "right",
+    "editor.guides.indentation": true,
+    "editor.minimap.renderCharacters": false
+}
