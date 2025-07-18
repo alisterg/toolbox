@@ -11,7 +11,6 @@ It's fresh computer time!
 # Install packages
 ```sh
 # apps
-brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install --cask firefox
 brew install --cask google-chrome
@@ -25,8 +24,7 @@ brew install ripgrep
 brew install diff-so-fancy
 ```
 
-# Iterm2 setup
-- Install the profiles from `iterm_profiles.json`
+# Shell setup
 - Oh My Zsh: https://ohmyz.sh/
 - PowerLevel10k: https://github.com/romkatv/powerlevel10k#oh-my-zsh
 - Add `zshrc` contents to `~/.zshrc`

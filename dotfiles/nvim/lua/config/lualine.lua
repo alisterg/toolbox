@@ -4,7 +4,7 @@ if (not status) then return end
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'auto', -- wombat, nord, iceberg_dark, solarized_dark, papercolor, material, powerline
+    theme = 'iceberg_dark', -- wombat, nord, iceberg_dark, solarized_dark, papercolor, material, powerline
     -- section_separators = {'', ''},
     section_separators = {''},
     -- component_separators = {'', ''},

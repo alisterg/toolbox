@@ -84,7 +84,7 @@ local actions = require('telescope.actions')
 require('telescope').setup{
   defaults = {
     file_ignore_patterns = {"node_modules", "fastlane", ".xcodeproj", ".pbxproj"},
-    layout_strategy = "vertical",
+    layout_strategy = "horizontal",
     layout_config = {
       vertical = {
         prompt_position = "top",
