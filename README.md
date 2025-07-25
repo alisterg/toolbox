@@ -10,4 +10,4 @@ This repository is a collection of useful tools, scripts and resources.
 - **templates**: Template files for configs and documentation
 - **wiki**: Study and learning notes about specific topics
 - **dev.md**: A development mantra
-- **resources.md**: Links to external learning resources
+- **tools.md**: Tools I like to use

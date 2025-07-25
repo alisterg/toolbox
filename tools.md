@@ -2,6 +2,8 @@
 
 List of tools that are useful
 
+"In all things have no preferences" -- Miyamoto Musashi
+
 ## Software tools
 
 - Diagramming: draw.io
