@@ -14,6 +14,7 @@ It's fresh computer time!
 brew install --cask visual-studio-code
 brew install --cask firefox
 brew install --cask google-chrome
+brew install --cask font-source-code-pro
 
 # utils
 brew install z
@@ -33,3 +34,8 @@ brew install diff-so-fancy
 - Copy dotfiles from `vim/` to `~/.vim/`
 - Vim-plug: https://github.com/junegunn/vim-plug
 - Run `:PlugInstall`
+
+# Notes
+
+Theme inspired by
+https://github.com/nilium/st-theme-freesia?tab=readme-ov-file

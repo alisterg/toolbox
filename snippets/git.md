@@ -1,22 +1,22 @@
 # Git
 
-### Readable table format
+## Readable table format
 
 `git log --pretty=format:'%C(blue)%ai %C(yellow)%h %C(green)%an %C(cyan)%s %C(magenta)%d'`
 
-### Ultimate git log
+## Ultimate git log
 
 `git log --pretty=format:'%C(blue)%ai [%ar] %C(yellow)%h %C(green)%an %C(cyan)%s %C(magenta)%d' --graph`
 
-### Branch graph
+## Branch graph
 
 `git log --oneline --graph --date-order`
 
-### Normal graph
+## Normal graph
 
 `git log --graph --date-order`
 
-### View changed files
+## View changed files
 
 `git log --name-status --oneline`
 

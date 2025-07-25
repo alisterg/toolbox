@@ -1,6 +1,12 @@
-# Resources
+# Tools
 
-Learning resources and other external links
+List of tools that are useful
+
+## Software tools
+
+- Diagramming: draw.io
+- AI: duck.ai / copilot
+- Editor: vscode / neovim
 
 ## Coding challenges
 
