@@ -7,7 +7,7 @@ List of tools that are useful
 ## Software tools
 
 - Diagramming: draw.io
-- AI: duck.ai / copilot
+- AI: claude / duck.ai
 - Editor: vscode / neovim
 
 ## Coding challenges
