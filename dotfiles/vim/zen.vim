@@ -95,14 +95,15 @@ call s:h("Cursor",        {"bg": s:purple, "fg": s:norm})
 call s:h("Comment",       {"fg": s:dark_blue, "cterm": "italic", "gui": "italic"})
 
 call s:h("DocComment", {"fg": s:darker_purple,})
-hi! link rustCommentLineDoc DocComment
-
+hi! link rustCommentLineDoc   DocComment
+hi! link typescriptDocComment DocComment
 
 call s:h("Method", {"fg": s:darker_purple})
-hi! link rustFuncName Method
-hi! link zshKSHFunction Method
-hi! link goDeclaration Method
-hi! link pythonFunction Method
+hi! link rustFuncName       Method
+hi! link zshKSHFunction     Method
+hi! link goDeclaration      Method
+hi! link pythonFunction     Method
+hi! link typescriptFuncName Method
 
 " Constants
 call s:h("Constant",      {"fg": s:purple})
@@ -113,8 +114,17 @@ hi! link Float            Constant
 hi! link String           Constant
 
 " Identifiers
-hi! link Identifier       Normal
-hi! link Function         Identifier
+hi! link Identifier                    Normal
+hi! link Function                      Identifier
+hi! link typescriptStringMethod        Identifier
+hi! link typescriptArrayMethod         Identifier
+hi! link typescriptES6SetMethod        Identifier
+hi! link typescriptCall                Identifier
+hi! link typescriptFuncCallArg         Identifier
+hi! link typescriptArrowFuncArg        Identifier
+hi! link typescriptConsoleMethod       Identifier
+hi! link typescriptObjectLabel         Identifier
+hi! link typescriptDestructureVariable Identifier
 
 " Statements
 call s:h("Statement",     {"fg": s:norm_subtle, "cterm": "italic", "gui": "italic"})
