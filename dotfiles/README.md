@@ -15,6 +15,7 @@ brew install --cask visual-studio-code
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask font-source-code-pro
+brew install --cask font-blex-mono-nerd-font
 
 # utils
 brew install z
@@ -37,5 +38,6 @@ brew install diff-so-fancy
 
 # Notes
 
-Theme inspired by
-https://github.com/nilium/st-theme-freesia?tab=readme-ov-file
+Themes inspired by
+https://github.com/nilium/st-theme-freesia
+https://github.com/rougier/nano-emacs
