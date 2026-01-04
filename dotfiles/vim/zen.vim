@@ -32,6 +32,7 @@ let s:lightest_gray   = { "gui": "#fafafa", "cterm": "255" }
 
 " Colors
 let s:darker_blue     = { "gui": "#1D4ED8", "cterm": "31"  }
+let s:light_blue      = { "gui": "#6ca7b7", "cterm": "31"  }
 let s:dark_blue       = { "gui": "#008EC4", "cterm": "32"  }
 let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
 let s:dark_red        = { "gui": "#C30771", "cterm": "125" }
@@ -59,6 +60,7 @@ if &background == "dark"
   let s:red             = s:light_red
   let s:yellow          = s:light_yellow
   let s:darker_blue     = s:dark_blue
+  let s:comment_blue    = s:light_blue
 else
   let s:bg              = s:lightest_gray
   let s:bg_subtle       = s:lighter_gray
@@ -69,6 +71,7 @@ else
   let s:green           = s:dark_green
   let s:red             = s:dark_red
   let s:yellow          = s:dark_yellow
+  let s:comment_blue    = s:dark_blue
 endif
 
 " Highlight function (from vim-hemisu)
@@ -93,7 +96,7 @@ if &background != s:background
 endif
 
 call s:h("Cursor",        {"bg": s:purple, "fg": s:norm})
-call s:h("Comment",       {"fg": s:dark_blue, "cterm": "italic", "gui": "italic"})
+call s:h("Comment",       {"fg": s:comment_blue, "cterm": "italic", "gui": "italic"})
 
 call s:h("DocComment", {"fg": s:darker_purple,})
 hi! link rustCommentLineDoc   DocComment
@@ -123,12 +126,13 @@ hi! link typescriptES6SetMethod        Identifier
 hi! link typescriptCall                Identifier
 hi! link typescriptFuncCallArg         Identifier
 hi! link typescriptArrowFuncArg        Identifier
+hi! link typescriptArrowFunc           Identifier
 hi! link typescriptConsoleMethod       Identifier
 hi! link typescriptObjectLabel         Identifier
 hi! link typescriptDestructureVariable Identifier
 
 " Statements
-call s:h("Statement",     {"fg": s:norm_subtle, "cterm": "italic", "gui": "italic"})
+call s:h("Statement",     {"fg": s:norm_subtle})
 hi! link Conditional      Statement
 hi! link Repeat           Statement
 hi! link Label            Statement
@@ -146,12 +150,15 @@ hi! link PreCondit        PreProc
 
 " Types
 call s:h("Type",          {"fg": s:darker_blue})
-hi! link StorageClass     Type
-hi! link Structure        Type
-hi! link Typedef          Type
+hi! link StorageClass               Type
+hi! link Structure                  Type
+hi! link Typedef                    Type
+hi! link typescriptAliasDeclaration Type
+hi! link typescriptTypeReference    Type
+hi! link typescriptEnum             Type
 
 " Special
-call s:h("Special",       {"fg": s:norm_subtle, "gui": "italic"})
+call s:h("Special",       {"fg": s:norm_subtle})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
