@@ -11,7 +11,10 @@
     "editor.cursorSurroundingLines": 3,
     "workbench.tree.indent": 16,
     "files.exclude": {
-        "package-lock.json": true,
+        "__pycache__": true,
+        "**/__pycache__": true,
+        ".pytest_cache": true,
+        ".venv": true,
         "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
@@ -57,30 +60,41 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "rubyLsp.formatter": "auto",
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
     "vue.inlayHints.optionsWrapper": false,
     "git.confirmSync": false,
-    "editor.fontFamily": "sf mono, tx-02",
+    "editor.fontFamily": "source code pro, saucecodepro nerd font, menlo",
     "editor.stickyScroll.enabled": false,
     "workbench.layoutControl.enabled": false,
-    "diffEditor.hideUnchangedRegions.enabled": true,
     "security.workspace.trust.untrustedFiles": "newWindow",
-    "todohighlight.keywords": [
-        {
-            "text": "NOTE:",
-            "color": "green",
-            "backgroundColor": "#1f1f1f"
-        },
-        {
-            "text": "FIXME:",
-            "color": "#66C3CC",
-            "backgroundColor": "#1f1f1f"
-        },
-        {
-            "text": "TODO:",
-            "color": "red",
-            "backgroundColor": "#1f1f1f"
-        }
-    ],
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -100,7 +114,109 @@
     "editor.semanticHighlighting.enabled": false,
     "workbench.activityBar.location": "bottom",
     "go.toolsManagement.autoUpdate": true,
-    "workbench.sideBar.location": "right",
     "editor.guides.indentation": true,
-    "editor.minimap.renderCharacters": false
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.enabled": false,
+    "telemetry.editStats.enabled": false,
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "zenMode.showTabs": "none",
+    "python.analysis.typeCheckingMode": "basic",
+    "breadcrumbs.enabled": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.renderSideBySide": false,
+    "window.customTitleBarVisibility": "windowed",
+    "chat.commandCenter.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "terminal.integrated.shellIntegration.enabled": false,
+    "github.copilot.chat.agent.currentEditorContext.enabled": false,
+    "github.copilot.chat.agent.autoFix": false,
+    "claudeCode.preferredLocation": "sidebar",
+    "editor.tokenColorCustomizations": {
+        "[Dark 2026]": {
+            "textMateRules": [
+                {
+                    "scope": ["keyword", "storage.type", "keyword.operator.expression"],
+                    "settings": {
+                        "foreground": "#DDBB88"
+                    }
+                },
+                {
+                    "scope": ["constant", "variable", "variable.other.constant", "support.variable", "meta.object-literal.key"],
+                    "settings": {
+                        "foreground": "#ADBAC7"
+                    }
+                },
+                {
+                    "scope": "constant.numeric",
+                    "settings": {
+                        "foreground": "#D1CC47"
+                    }
+                },
+                {
+                    "scope": ["constant.language", "variable.language", "storage.modifier", "keyword.operator.new"],
+                    "settings": {
+                        "foreground": "#FDAC54"
+                    }
+                },
+                {
+                    "scope": ["entity.name.type", "entity.name.namespace", "support.class"],
+                    "settings": {
+                        "foreground": "#B392F0"
+                    }
+                },
+                {
+                    "scope": "string",
+                    "settings": {
+                        "foreground": "#50a966"
+                    }
+                }
+            ]
+        },
+        "[Light 2026]": {
+            "textMateRules": [
+                {
+                    "scope": ["storage.type", "entity.other.attribute-name", "support.type.property-name"],
+                    "settings": {
+                        "foreground": "#a02c66"
+                    }
+                },
+                {
+                    "scope": "support.type.property-name.table.toml",
+                    "settings": {
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "string.unquoted.plain.out.yaml",
+                    "settings": {
+                        "foreground": "#0A3069"
+                    }
+                },
+                {
+                    "scope": "string.unquoted.block.yaml",
+                    "settings": {
+                        "foreground": "#15619f"
+                    }
+                }
+            ]
+        }
+    },
+    "workbench.colorCustomizations": {
+        "[*Light*]": {
+            "scrollbarSlider.background": "#00000020",
+            "scrollbarSlider.hoverBackground": "#00000040",
+            "scrollbarSlider.activeBackground": "#00000060"
+        },
+        "[*Dark*]": {
+            "scrollbarSlider.background": "#ffffff20",
+            "scrollbarSlider.hoverBackground": "#ffffff40",
+            "scrollbarSlider.activeBackground": "#ffffff60",
+            "editorActionList.focusBackground": "#674632",
+            "editorActionList.background": "#674632",
+        },
+        "[Zenbones Dark]": {
+            "menu.background": "#887a8e"
+        },
+    },
+    "editor.autoClosingBrackets": "never"
 }
