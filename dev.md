@@ -1,1 +1,0 @@
-Automate, simplify, create value
