@@ -23,7 +23,7 @@ alias s="git status"
 alias d="git diff"
 alias a="git add ."
 alias c="git commit -m"
-alias l="git log --pretty=format:'%C(blue)%ai [%ar] %C(yellow)%h %C(green)%an %C(white)%s %C(magenta)%d' --graph --date-order"
+alias l="git log --pretty=format:'%C(blue)%ai [%ar] %C(yellow)%h %C(green)%an %C(white)%s %C(magenta)%d' --graph --date-order --all"
 alias gchanged="git log --graph --pretty=\"%C(magenta)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset\" --stat"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
