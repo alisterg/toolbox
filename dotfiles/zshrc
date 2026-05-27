@@ -10,19 +10,26 @@ precmd() {
     else
       _git_dirty=''
     fi
+    if [[ $(git rev-list --count @{u}..HEAD 2>/dev/null) -gt 0 ]]; then
+      _git_push=' ↑'
+    else
+      _git_push=''
+    fi
   else
     _git_dirty=''
+    _git_push=''
   fi
 }
 zstyle ':vcs_info:git:*' formats ' [%b]'
 zstyle ':vcs_info:*' enable git
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~%f%F{yellow}${vcs_info_msg_0_}%F{red}${_git_dirty}%f %F{%(?.green.red)}❯%f '
+PROMPT='%F{blue}%~%f%F{yellow}${vcs_info_msg_0_}%F{red}${_git_dirty}%F{cyan}${_git_push}%f %F{%(?.green.red)}❯%f '
 
 alias s="git status"
 alias d="git diff"
 alias a="git add ."
 alias c="git commit -m"
+alias ac="git commit -a -m"
 alias l="git log --pretty=format:'%C(blue)%ai [%ar] %C(yellow)%h %C(green)%an %C(white)%s %C(magenta)%d' --graph --date-order --all"
 alias gchanged="git log --graph --pretty=\"%C(magenta)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset\" --stat"
 
