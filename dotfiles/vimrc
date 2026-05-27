@@ -17,7 +17,8 @@ endif
 
 syntax on
 set termguicolors
-colorscheme lunaperche
+"colorscheme lunaperche
+runtime ./zen.vim
 
 " PLUGINS -------------------------------------------------------------------
 call plug#begin()
@@ -104,7 +105,7 @@ xmap <leader>a <Plug>(EasyAlign)
 " FZF plugin
 nmap gp :Files<CR>
 nmap gi :Rg<CR>
-nmap go :BTags<CR>
+nmap go :History<CR>
 " FZF config
 let g:fzf_vim = {}
 let g:fzf_vim.preview_window = ['up,50%', 'ctrl-/']
