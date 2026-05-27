@@ -1,7 +1,29 @@
 export EDITOR="vim"
 
-alias gs="git status"
-alias gfancy="git log --pretty=format:'%C(blue)%ai [%ar] %C(yellow)%h %C(green)%an %C(white)%s %C(magenta)%d' --graph --date-order"
+# Prompt
+autoload -Uz vcs_info
+precmd() {
+  vcs_info
+  if git rev-parse --git-dir &>/dev/null 2>&1; then
+    if [[ -n $(git status --porcelain 2>/dev/null) ]]; then
+      _git_dirty=' *'
+    else
+      _git_dirty=''
+    fi
+  else
+    _git_dirty=''
+  fi
+}
+zstyle ':vcs_info:git:*' formats ' [%b]'
+zstyle ':vcs_info:*' enable git
+setopt PROMPT_SUBST
+PROMPT='%F{blue}%~%f%F{yellow}${vcs_info_msg_0_}%F{red}${_git_dirty}%f %F{%(?.green.red)}❯%f '
+
+alias s="git status"
+alias d="git diff"
+alias a="git add ."
+alias c="git commit -m"
+alias l="git log --pretty=format:'%C(blue)%ai [%ar] %C(yellow)%h %C(green)%an %C(white)%s %C(magenta)%d' --graph --date-order"
 alias gchanged="git log --graph --pretty=\"%C(magenta)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset\" --stat"
 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
