@@ -169,6 +169,10 @@ hi htmlSpecialChar  guifg=#5fd75f guibg=NONE gui=NONE
 hi htmlComment      guifg=#8B8B3A guibg=NONE gui=NONE
 hi htmlCommentPart  guifg=#8B8B3A guibg=NONE gui=NONE
 
+hi link jsxOpenPunct htmlTag
+hi link jsxClosePunct htmlEndTag
+hi link jsxAttrib htmlArg
+
 " ── XML ──────────────────────────────────────────────────────────────────────
 hi xmlTag           guifg=#00ff00 guibg=NONE gui=NONE
 hi xmlEndTag        guifg=#ff00ff guibg=NONE gui=NONE
