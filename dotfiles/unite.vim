@@ -57,7 +57,7 @@ hi PmenuSbar      guifg=NONE    guibg=#030608 gui=NONE
 hi PmenuSel       guifg=#030608 guibg=#00AAFF gui=bold
 hi PmenuThumb     guifg=NONE    guibg=#4A5A6A gui=NONE
 
-hi Visual         guifg=#CDD9E5 guibg=#0d2a3d gui=NONE
+hi Visual         guifg=NONE    guibg=#770811 gui=NONE
 hi VisualNOS      guifg=#CDD9E5 guibg=#0d2a3d gui=NONE
 hi Search         guifg=#000000 guibg=#ffff00 gui=NONE
 hi IncSearch      guifg=#5fd75f guibg=#000000 gui=NONE
